@@ -1,0 +1,35 @@
+ion-card.custom-card {
+    border-radius: 16px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
+    margin: 16px; 
+  }
+  
+  ion-content {
+    --background: linear-gradient(180deg, #b6449d, #0951af);
+  }
+  ion-searchbar{
+    --background: #ffffffb7;
+  }
+
+  ion-card-header {
+    background-color: #1d2cf560; 
+    border-bottom: 1px solid #ddd; 
+  }
+  
+  ion-card-title {
+    font-weight: bold;
+  }
+  
+  ion-card-subtitle {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  ion-card-content {
+    padding: 16px;
+  }
+  
+ ion-title{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+ }

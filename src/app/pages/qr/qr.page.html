@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar> 
+    <ion-title >QR</ion-title>
+    <ion-buttons >
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+
+    
+ 
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+
+    <ion-card>
+      <ion-card-content>
+        <img src="assets/img/qrgif.gif" class="gif-img" >
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-button shape="round" (click)=scan() expand="full" >
+      <ion-icon name="camera"></ion-icon> Scanear
+    </ion-button>
+
+    
+  </ion-header>
+</ion-content>

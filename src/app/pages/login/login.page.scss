@@ -1,0 +1,88 @@
+.login-card {
+  border-radius: 52px;
+  background-color: #ffffff5e;
+  box-shadow:  15px 15px 7px #2f1a346e;
+  position: relative; 
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  top: 20%;
+  font-size: 30px;
+ 
+}
+
+
+.icono {
+  position: absolute; 
+  z-index: 1; 
+  width: 160px; 
+  height: 190px;
+  color: #fff;
+  top: 19%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+ 
+}
+
+
+ion-content {
+  --background: linear-gradient(180deg, #b6449d, #0951af);
+}
+
+.text-container {
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+}
+.text-container {
+  text-align: left;
+}
+
+ion-button {
+  display: block;
+  margin: 20px auto;
+}
+
+
+
+label {
+  color: #fff;
+}
+
+ion-card-title {
+  color: white !important;
+  font-family: monospace ;
+  text-align: center;
+  top: 30px;
+}
+
+.cuenta{
+  text-align: center;
+  justify-content: center;
+}
+
+.olvContra{
+  text-align: center;
+  justify-content: center;
+  
+
+}
+
+ion-button{
+  --background: #f7489f;
+  
+}
+
+ion-input.transparent-input {
+  --border-radius: 20px;
+  --background: #ffffff6c;
+  --color: #020202;
+  --padding-start: 15px;
+  --placeholder-color: rgb(255, 255, 255);
+  --placeholder-opacity: 0.8;
+  margin-bottom: 15px;
+  top: 10px;
+
+
+}

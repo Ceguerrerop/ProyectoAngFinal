@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Api Gatos uwu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let image of catImages">
+      <img [src]="image.url" alt="Imagen de Gato">
+      <ion-card-content>
+        <!-- Aquí puedes agregar más información relacionada con la imagen si lo deseas -->
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+  <ion-button expand="full" (click)="cargarNuevasImagenes()">Otro gatito</ion-button>
+</ion-content>
+
+

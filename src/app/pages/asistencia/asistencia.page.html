@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Asistencia</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-content-background">
+
+  <ion-searchbar animated="true" placeholder="Buscar"></ion-searchbar>
+
+  <ion-card class="custom-card" *ngFor="let h of dataAsis">
+    <ion-card-header>
+
+      <ion-card-title>{{h.clase}}</ion-card-title>
+      <h2>{{h.docente}} {{h.asignatura}} {{h.seccion}}</h2>
+      <h2>{{h.horario}}</h2>
+      <h2>{{h.sala}}</h2>
+      
+    </ion-card-header>
+  </ion-card>
+   
+</ion-content>

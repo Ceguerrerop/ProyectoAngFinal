@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar> 
+    <ion-title>Registrarse</ion-title>
+    <ion-buttons >
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header >
+    
+    <ion-list>
+      <H1>Crear tu cuenta !</H1>
+      <ion-item>
+        <ion-input [(ngModel)]="nombre"labelPlacement="floating" value="">
+          <div slot="label">Nombre</div>
+        </ion-input>
+        <ion-input  [(ngModel)]="apellido"labelPlacement="floating" value="">
+          <div slot="label">Apellido </div>
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input [(ngModel)]="usuario" labelPlacement="floating" value="">
+          <div slot="label">Usuario <ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input [(ngModel)]="correo" labelPlacement="floating" value="">
+          <div slot="label">Email <ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input labelPlacement="floating" value="+56 9">
+          <div slot="label">Telefono <ion-text color="danger"></ion-text></div>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input [(ngModel)]="contrasena"  type="password" labelPlacement="floating" value="">
+          <div slot="label">Contraseña <ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="password" labelPlacement="floating" value="">
+          <div slot="label">Repita la contraseña <ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-item>
+
+      <ion-list>
+        <ion-item>
+          <ion-select (ionChange)="cargarComuna()" placeholder="Seleccione region" [(ngModel)]="regionSel">
+            <ion-select-option *ngFor="let i of regiones" [value]="i.id">{{i.nombre}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+  
+  
+      <ion-list>
+        <ion-item>
+          <ion-select [disabled]="disabledComuna" placeholder="Seleccione comuna" [(ngModel)]="comunaSel">
+            <ion-select-option *ngFor="let i of comunas" [value]="i.id">{{i.nombre}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+
+
+      
+
+      <ion-button class="botonRegis" (click)="registro()">Registrarse</ion-button>
+    </ion-list>
+    
+  </ion-header>
+</ion-content>
+

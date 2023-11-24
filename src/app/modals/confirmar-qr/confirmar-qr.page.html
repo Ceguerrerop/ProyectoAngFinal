@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon (click)="close()" name="close-outline" slot="end"></ion-icon>
+    <ion-title>Confiirmacion de qr</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content [fullscreen]="true">
+    <ion-card class="card" *ngFor="let i of dataQr">
+      <h3>Asignatura: <span>{{i.asignatura}}</span></h3>
+      <h3>Docente: <span>{{i.docente}}</span></h3>
+      <h3>Fecha: <span>{{i.fecha}}</span></h3>
+      <h3>Horario: <span>{{i.horario}}</span></h3>
+      <h3>Clase: <span>{{i.clase}}</span></h3>
+      <h3>Sala: <span>{{i.sala}}</span></h3>
+      <h3>Sección: <span>{{i.seccion}}</span></h3>
+    </ion-card>
+  </ion-content>
+  
+

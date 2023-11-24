@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">TC-Asistencia</string>
+    <string name="title_activity_main">TC-Asistencia</string>
+    <string name="package_name">cl.tcasistencia.app</string>
+    <string name="custom_url_scheme">cl.tcasistencia.app</string>
+</resources>

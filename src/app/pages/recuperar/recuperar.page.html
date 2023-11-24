@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar> 
+    <ion-title>Reestablecer contraseña</ion-title>
+    <ion-buttons >
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <ion-header >
+    
+    <ion-list>
+      <H1>Recuperar tu contraseña</H1>
+      <ion-item>
+        <ion-input [(ngModel)]="correo" labelPlacement="floating" value="">
+          <div slot="label">Email</div>
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input type="password" labelPlacement="floating" value="">
+          <div slot="label">Nueva contraseña</div>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="password" labelPlacement="floating" value="">
+          <div slot="label">Repita contraseña</div>
+        </ion-input>
+      </ion-item>
+
+      <ion-button (click)="resetPassword()">Confirmar</ion-button>
+  </ion-list>
+
+
+
+  </ion-header>
+</ion-content>
