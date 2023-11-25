@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { Router } from '@angular/router';
-import { HelperService } from 'src/app/servicios/helper.service';
 import { StorageService } from 'src/app/servicios/storage.service';
 
 @Component({
